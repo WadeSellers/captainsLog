@@ -28,6 +28,7 @@
 
     NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
     self.paperTextView.text = [log stringForKey:@"textLog"];
+
     
 
 }
@@ -101,8 +102,8 @@
                          NSLog(@"Book Has Closed!");
                          self.paper.alpha = 0.0;
 
-                         NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
-                         [log setObject:self.paperTextView forKey:@"textLog"];
+//                         NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
+//                         [log setObject:self.paperTextView forKey:@"textLog"];
 
                      }];
 }

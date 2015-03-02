@@ -28,9 +28,6 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-NV-Jzq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ge1-UM-2P3" appends="YES" id="0KI-on-RlS"/>
-                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quill" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-Dx-Swh">
                                 <rect key="frame" x="251" y="20" width="333" height="193"/>
@@ -55,6 +52,9 @@
                                 <string key="text">This is a Test of the New Custom Font  .klsdjf lsd flksdjf slkdfj slkdfj slkdjf slk djlskd flksjd flskjd flskdjf lskdj flskjdf lksjdf lskdj flskjdf lskdf slkdfj sdlkfj sldkfjs ldkfj slkdjf sldjflk slkfdj sldkfj slkdjf slkdjflksj flsjd flksjd fljsd flksdf jlskjdf lsdflj sldkfj sldfj slkdj flksdjf lksj dlfjslkdjf lskdjf slkdfj lsdf slkd flskdf slkdj flksjdlfkjsl dfj sdlfkj sdlkfj slkdjf slkj f</string>
                                 <fontDescription key="fontDescription" name="NoteraPersonalUseOnly" family="Notera Personal Use Only" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ge1-UM-2P3" appends="YES" id="Zes-Tu-vS3"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
