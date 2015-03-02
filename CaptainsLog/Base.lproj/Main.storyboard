@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Notera_PersonalUseOnly.ttf">
+            <string>NoteraPersonalUseOnly</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +21,105 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood table" translatesAutoresizingMaskIntoConstraints="NO" id="xZU-ry-Rhb">
+                                <rect key="frame" x="-8" y="0.0" width="616" height="600"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-NV-Jzq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ge1-UM-2P3" appends="YES" id="0KI-on-RlS"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quill" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-Dx-Swh">
+                                <rect key="frame" x="251" y="20" width="333" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="Fcg-OS-bqT"/>
+                                    <constraint firstAttribute="height" constant="193" id="STb-zc-vBV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogCover" translatesAutoresizingMaskIntoConstraints="NO" id="aQH-PM-cKN">
+                                <rect key="frame" x="50" y="244" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fh5-oq-738" appends="YES" id="gP0-Sh-AX0"/>
+                                    <outletCollection property="gestureRecognizers" destination="aQN-bO-ttH" appends="YES" id="AWU-0l-vQc"/>
+                                    <outletCollection property="gestureRecognizers" destination="cOO-rY-J8l" appends="YES" id="8F7-8J-kUR"/>
+                                    <outletCollection property="gestureRecognizers" destination="jnH-U2-Z3x" appends="YES" id="ZTG-Em-IEH"/>
+                                </connections>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
+                                <rect key="frame" x="16" y="70" width="568" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">This is a Test of the New Custom Font  .klsdjf lsd flksdjf slkdfj slkdfj slkdjf slk djlskd flksjd flskjd flskdjf lskdj flskjdf lksjdf lskdj flskjdf lskdf slkdfj sdlkfj sldkfjs ldkfj slkdjf sldjflk slkfdj sldkfj slkdjf slkdjflksj flsjd flksjd fljsd flksdf jlskjdf lsdflj sldkfj sldfj slkdj flksdjf lksj dlfjslkdjf lskdjf slkdfj lsdf slkd flskdf slkdj flksjdlfkjsl dfj sdlfkj sdlkfj slkdjf slkj f</string>
+                                <fontDescription key="fontDescription" name="NoteraPersonalUseOnly" family="Notera Personal Use Only" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xFl-BF-uWq" secondAttribute="bottom" constant="30" id="2cB-uU-NNt"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tpg-NV-Jzq" secondAttribute="bottom" id="6NL-cY-f95"/>
+                            <constraint firstItem="xFl-BF-uWq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="7AM-mY-BrY"/>
+                            <constraint firstItem="xZU-ry-Rhb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="ANI-fo-Ui8"/>
+                            <constraint firstItem="tpg-NV-Jzq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Ao3-Ya-RYj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xZU-ry-Rhb" secondAttribute="trailingMargin" constant="-16" id="Bqb-oF-EQF"/>
+                            <constraint firstItem="aQH-PM-cKN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="244" id="QUl-im-crU"/>
+                            <constraint firstItem="aQH-PM-cKN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="UDc-4f-pys"/>
+                            <constraint firstItem="xFl-BF-uWq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ZHz-5M-f9b"/>
+                            <constraint firstItem="xFl-BF-uWq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="abX-kt-Qf7"/>
+                            <constraint firstItem="HUp-Dx-Swh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="b9v-N3-emf"/>
+                            <constraint firstItem="HUp-Dx-Swh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="dr8-j8-j4I"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aQH-PM-cKN" secondAttribute="bottom" constant="-244" id="hL8-Tj-duv"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xZU-ry-Rhb" secondAttribute="bottom" id="hgt-Hn-aEh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aQH-PM-cKN" secondAttribute="trailing" constant="-66" id="jtV-yX-xuu"/>
+                            <constraint firstItem="tpg-NV-Jzq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="n0f-ml-xB3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tpg-NV-Jzq" secondAttribute="trailing" constant="-16" id="nAo-LH-XMu"/>
+                            <constraint firstItem="xZU-ry-Rhb" firstAttribute="leadingMargin" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="sHO-qD-2Ec"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logCoverImage" destination="aQH-PM-cKN" id="6pD-sL-Zb5"/>
+                        <outlet property="paper" destination="tpg-NV-Jzq" id="0MX-wZ-Lix"/>
+                        <outlet property="paperTextView" destination="xFl-BF-uWq" id="No2-fn-rCg"/>
+                        <outlet property="quill" destination="HUp-Dx-Swh" id="Cvv-RR-Qrx"/>
+                        <outlet property="woodTableImage" destination="xZU-ry-Rhb" id="FyR-lv-cVQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fh5-oq-738" userLabel="Book Tapped">
+                    <connections>
+                        <action selector="onBookTapped:" destination="vXZ-lx-hvc" id="dGY-iD-2UE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="aQN-bO-ttH" userLabel="Book Opened">
+                    <connections>
+                        <action selector="swipeBookLeft:" destination="vXZ-lx-hvc" id="dQy-23-NqT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ge1-UM-2P3" userLabel="Book Closed">
+                    <connections>
+                        <action selector="onPaperSwipeRight:" destination="vXZ-lx-hvc" id="Vwc-kz-fjP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="cOO-rY-J8l" userLabel="Book Swiped Down">
+                    <connections>
+                        <action selector="onBookSwipeDown:" destination="vXZ-lx-hvc" id="A6Q-hN-Qsi"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="jnH-U2-Z3x" userLabel="Book Swiped Up">
+                    <connections>
+                        <action selector="onBookSwipeUp:" destination="vXZ-lx-hvc" id="3FS-pd-MyH"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogCover" width="640" height="1136"/>
+        <image name="paper" width="397" height="518"/>
+        <image name="quill" width="279" height="169"/>
+        <image name="wood table" width="414" height="735"/>
+    </resources>
 </document>

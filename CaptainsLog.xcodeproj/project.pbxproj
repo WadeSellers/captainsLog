@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16D41DA31AA443F90056A330 /* Notera_PersonalUseOnly.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16D41DA21AA443F90056A330 /* Notera_PersonalUseOnly.ttf */; };
 		16E3D1D41A96C4810058A699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3D1D31A96C4810058A699 /* main.m */; };
 		16E3D1D71A96C4810058A699 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3D1D61A96C4810058A699 /* AppDelegate.m */; };
 		16E3D1DA1A96C4810058A699 /* CaptainsLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16E3D1D81A96C4810058A699 /* CaptainsLog.xcdatamodeld */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16D41DA21AA443F90056A330 /* Notera_PersonalUseOnly.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Notera_PersonalUseOnly.ttf; sourceTree = "<group>"; };
 		16E3D1CE1A96C4810058A699 /* CaptainsLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptainsLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E3D1D21A96C4810058A699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E3D1D31A96C4810058A699 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		16E3D1D11A96C4810058A699 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16D41DA21AA443F90056A330 /* Notera_PersonalUseOnly.ttf */,
 				16E3D1D21A96C4810058A699 /* Info.plist */,
 				16E3D1D31A96C4810058A699 /* main.m */,
 			);
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E3D1E01A96C4810058A699 /* Main.storyboard in Resources */,
+				16D41DA31AA443F90056A330 /* Notera_PersonalUseOnly.ttf in Resources */,
 				16E3D1E51A96C4810058A699 /* LaunchScreen.xib in Resources */,
 				16E3D1E21A96C4810058A699 /* Images.xcassets in Resources */,
 			);
@@ -416,6 +420,7 @@
 				16E3D1F61A96C4810058A699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16E3D1F71A96C4810058A699 /* Build configuration list for PBXNativeTarget "CaptainsLogTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				16E3D1F91A96C4810058A699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
