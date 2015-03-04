@@ -26,8 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
-    self.paperTextView.text = [log stringForKey:@"textLog"];
+//    NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
+//    self.paperTextView.text = [log stringForKey:@"textLog"];
 
     
 
@@ -77,7 +77,7 @@
 }
 
 - (IBAction)swipeBookLeft:(UISwipeGestureRecognizer *)sender {
-    if (self.logCoverImage.frame.origin.x == 0) {
+    //if (self.logCoverImage.frame.origin.x == 0) {
         self.paper.alpha = 1.0;
         [UIView animateWithDuration:1.0
                               delay:0.0
@@ -86,11 +86,13 @@
                              [self.logCoverImage setFrame:CGRectMake(0, 0, 20, self.logCoverImage.frame.size.height)];
                          } completion:^(BOOL finished) {
                              NSLog(@"Book Has Opened!");
+
+                             //This must be here.  The paperTextView is what the swipe right gesture is attached to
                              self.paperTextView.alpha = 1.0;
 //                             self.logCoverImage.alpha = 0.0;
 //                             self.quill.alpha = 0.0;
                          }];
-    }
+    //}
 }
 - (IBAction)onPaperSwipeRight:(UISwipeGestureRecognizer *)sender {
     [UIView animateWithDuration:1.0
@@ -100,9 +102,9 @@
                          [self.logCoverImage setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
                      } completion:^(BOOL finished) {
                          NSLog(@"Book Has Closed!");
-                         self.paper.alpha = 0.0;
+                         //self.paper.alpha = 0.0;
 
-//                         NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
+//                         [NSUserDefaults *log = [NSUserDefaults standardUserDefaults];
 //                         [log setObject:self.paperTextView forKey:@"textLog"];
 
                      }];
@@ -159,8 +161,8 @@
 
 
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
-}
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//    [self.view endEditing:YES];
+//}
 
 @end

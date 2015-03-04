@@ -29,6 +29,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
+                                <rect key="frame" x="16" y="70" width="568" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">This is a Test of the New Custom Font  .klsdjf lsd flksdjf slkdfj slkdfj slkdjf slk djlskd flksjd flskjd flskdjf lskdj flskjdf lksjdf lskdj flskjdf lskdf slkdfj sdlkfj sldkfjs ldkfj slkdjf sldjflk slkfdj sldkfj slkdjf slkdjflksj flsjd flksjd fljsd flksdf jlskjdf lsdflj sldkfj sldfj slkdj flksdjf lksj dlfjslkdjf lskdjf slkdfj lsdf slkd flskdf slkdj flksjdlfkjsl dfj sdlfkj sdlkfj slkdjf slkj f</string>
+                                <fontDescription key="fontDescription" name="NoteraPersonalUseOnly" family="Notera Personal Use Only" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ge1-UM-2P3" appends="YES" id="Zes-Tu-vS3"/>
+                                </connections>
+                            </textView>
                             <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quill" translatesAutoresizingMaskIntoConstraints="NO" id="HUp-Dx-Swh">
                                 <rect key="frame" x="251" y="20" width="333" height="193"/>
                                 <constraints>
@@ -46,16 +56,6 @@
                                     <outletCollection property="gestureRecognizers" destination="jnH-U2-Z3x" appends="YES" id="ZTG-Em-IEH"/>
                                 </connections>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
-                                <rect key="frame" x="16" y="70" width="568" height="500"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">This is a Test of the New Custom Font  .klsdjf lsd flksdjf slkdfj slkdfj slkdjf slk djlskd flksjd flskjd flskdjf lskdj flskjdf lksjdf lskdj flskjdf lskdf slkdfj sdlkfj sldkfjs ldkfj slkdjf sldjflk slkfdj sldkfj slkdjf slkdjflksj flsjd flksjd fljsd flksdf jlskjdf lsdflj sldkfj sldfj slkdj flksdjf lksj dlfjslkdjf lskdjf slkdfj lsdf slkd flskdf slkdj flksjdlfkjsl dfj sdlfkj sdlkfj slkdjf slkj f</string>
-                                <fontDescription key="fontDescription" name="NoteraPersonalUseOnly" family="Notera Personal Use Only" pointSize="50"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ge1-UM-2P3" appends="YES" id="Zes-Tu-vS3"/>
-                                </connections>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
