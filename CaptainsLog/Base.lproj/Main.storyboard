@@ -26,13 +26,12 @@
                                 <rect key="frame" x="-8" y="0.0" width="616" height="600"/>
                             </imageView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paper" translatesAutoresizingMaskIntoConstraints="NO" id="tpg-NV-Jzq">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="50" y="244" width="550" height="356"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
-                                <rect key="frame" x="16" y="70" width="568" height="500"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Captain's Log:  Today was bitter day at sea.  The crew is growing restless since treasure has not been found yet." translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
+                                <rect key="frame" x="123" y="253" width="461" height="317"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">This is a Test of the New Custom Font  .klsdjf lsd flksdjf slkdfj slkdfj slkdjf slk djlskd flksjd flskjd flskdjf lskdj flskjdf lksjdf lskdj flskjdf lskdf slkdfj sdlkfj sldkfjs ldkfj slkdjf sldjflk slkfdj sldkfj slkdjf slkdjflksj flsjd flksjd fljsd flksdf jlskjdf lsdflj sldkfj sldfj slkdj flksdjf lksj dlfjslkdjf lskdjf slkdfj lsdf slkd flskdf slkdj flksjdlfkjsl dfj sdlfkj sdlkfj slkdjf slkj f</string>
                                 <fontDescription key="fontDescription" name="NoteraPersonalUseOnly" family="Notera Personal Use Only" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -46,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="193" id="STb-zc-vBV"/>
                                 </constraints>
                             </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogCover" translatesAutoresizingMaskIntoConstraints="NO" id="aQH-PM-cKN">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogCover" translatesAutoresizingMaskIntoConstraints="NO" id="aQH-PM-cKN" userLabel="logCover">
                                 <rect key="frame" x="50" y="244" width="600" height="600"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -61,30 +60,30 @@
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xFl-BF-uWq" secondAttribute="bottom" constant="30" id="2cB-uU-NNt"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tpg-NV-Jzq" secondAttribute="bottom" id="6NL-cY-f95"/>
-                            <constraint firstItem="xFl-BF-uWq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="50" id="7AM-mY-BrY"/>
+                            <constraint firstItem="xFl-BF-uWq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="233" id="7AM-mY-BrY"/>
                             <constraint firstItem="xZU-ry-Rhb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="ANI-fo-Ui8"/>
-                            <constraint firstItem="tpg-NV-Jzq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Ao3-Ya-RYj"/>
+                            <constraint firstItem="tpg-NV-Jzq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="Ao3-Ya-RYj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xZU-ry-Rhb" secondAttribute="trailingMargin" constant="-16" id="Bqb-oF-EQF"/>
                             <constraint firstItem="aQH-PM-cKN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="244" id="QUl-im-crU"/>
                             <constraint firstItem="aQH-PM-cKN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="UDc-4f-pys"/>
-                            <constraint firstItem="xFl-BF-uWq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ZHz-5M-f9b"/>
+                            <constraint firstItem="xFl-BF-uWq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="107" id="ZHz-5M-f9b"/>
                             <constraint firstItem="xFl-BF-uWq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="abX-kt-Qf7"/>
                             <constraint firstItem="HUp-Dx-Swh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="b9v-N3-emf"/>
                             <constraint firstItem="HUp-Dx-Swh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="dr8-j8-j4I"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aQH-PM-cKN" secondAttribute="bottom" constant="-244" id="hL8-Tj-duv"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xZU-ry-Rhb" secondAttribute="bottom" id="hgt-Hn-aEh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aQH-PM-cKN" secondAttribute="trailing" constant="-66" id="jtV-yX-xuu"/>
-                            <constraint firstItem="tpg-NV-Jzq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="n0f-ml-xB3"/>
+                            <constraint firstItem="tpg-NV-Jzq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="244" id="n0f-ml-xB3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tpg-NV-Jzq" secondAttribute="trailing" constant="-16" id="nAo-LH-XMu"/>
                             <constraint firstItem="xZU-ry-Rhb" firstAttribute="leadingMargin" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="sHO-qD-2Ec"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="logCoverImage" destination="aQH-PM-cKN" id="6pD-sL-Zb5"/>
+                        <outlet property="logCover" destination="aQH-PM-cKN" id="g95-7M-6VV"/>
                         <outlet property="paper" destination="tpg-NV-Jzq" id="0MX-wZ-Lix"/>
                         <outlet property="paperTextView" destination="xFl-BF-uWq" id="No2-fn-rCg"/>
                         <outlet property="quill" destination="HUp-Dx-Swh" id="Cvv-RR-Qrx"/>
-                        <outlet property="woodTableImage" destination="xZU-ry-Rhb" id="FyR-lv-cVQ"/>
+                        <outlet property="woodTable" destination="xZU-ry-Rhb" id="2yd-Fp-UUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
