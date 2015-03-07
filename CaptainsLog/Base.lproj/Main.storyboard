@@ -29,9 +29,10 @@
                                 <rect key="frame" x="50" y="244" width="550" height="356"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Captain's Log:  Today was bitter day at sea.  The crew is growing restless since treasure has not been found yet." translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFl-BF-uWq" userLabel="Paper Text View">
                                 <rect key="frame" x="123" y="253" width="461" height="317"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Captain's Log:  Today was a bitter day at sea.  The crew is growing restless since treasure has not been found yet.  Attempts at piecing together the treasure map have proven worthless.  - Captain Wade</string>
                                 <fontDescription key="fontDescription" name="NoteraPersonalUseOnly" family="Notera Personal Use Only" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
